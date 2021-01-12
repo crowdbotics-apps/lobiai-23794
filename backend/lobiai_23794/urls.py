@@ -41,6 +41,18 @@ urlpatterns = [
     path("menu/", include("menu.urls")),
     path("api/v1/", include("delivery_user_profile.api.v1.urls")),
     path("delivery_user_profile/", include("delivery_user_profile.urls")),
+    path("api/v1/", include("task.api.v1.urls")),
+    path("task/", include("task.urls")),
+    path("api/v1/", include("task_profile.api.v1.urls")),
+    path("task_profile/", include("task_profile.urls")),
+    path("api/v1/", include("tasker_business.api.v1.urls")),
+    path("tasker_business/", include("tasker_business.urls")),
+    path("api/v1/", include("location.api.v1.urls")),
+    path("location/", include("location.urls")),
+    path("api/v1/", include("wallet.api.v1.urls")),
+    path("wallet/", include("wallet.urls")),
+    path("api/v1/", include("task_category.api.v1.urls")),
+    path("task_category/", include("task_category.urls")),
 ]
 
 admin.site.site_header = "Lobiai"
